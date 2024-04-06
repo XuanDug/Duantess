@@ -1,11 +1,6 @@
 ﻿using BUS.IServices;
 using DAL.Models.DomainClass;
 using DAL.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BUS.Services
 {
@@ -20,12 +15,10 @@ namespace BUS.Services
         {
             return _Rep.GetAll(txtSearch, searchType);
         }
-
         public Giay GetByID(int id)
         {
             return _Rep.GetByID(id);
         }
-
         public bool Khoa_MoKhoa(int id)
         {
             if (id == 0|| id == null)
@@ -34,7 +27,6 @@ namespace BUS.Services
             }
             return _Rep.Khoa_MoKhoa(id);
         }
-
         public bool Sua(int id, Giay Giay)
         {
             if(Giay.Tengiay == "") 
@@ -43,7 +35,6 @@ namespace BUS.Services
             }
             return _Rep.Sua(id, Giay);
         }
-
         public bool Them(Giay Giay)
         {
             if(Giay.Tengiay == "")
@@ -52,6 +43,5 @@ namespace BUS.Services
             }
             return _Rep.Them(Giay);
         }
-
     }
 }
