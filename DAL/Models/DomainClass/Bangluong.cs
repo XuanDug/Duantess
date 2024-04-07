@@ -13,8 +13,8 @@ public partial class Bangluong
     [Column("MALUONG")]
     public int Maluong { get; set; }
 
-    [Column("THANGLAM")]
-    public int? Thanglam { get; set; }
+    [Column("THANGLAM", TypeName = "date")]
+    public DateTime? Thanglam { get; set; }
 
     [Column("LUONGCOBAN")]
     public double? Luongcoban { get; set; }

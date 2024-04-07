@@ -59,6 +59,11 @@ namespace BUS.Services
             return _Rep.Sua(id, Thuonghieu);
         }
 
+        public void Sua(string name, Thuonghieu thuongHieu)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Them(Thuonghieu Thuonghieu)
         {
              if (Thuonghieu == null)

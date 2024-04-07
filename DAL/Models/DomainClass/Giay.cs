@@ -14,7 +14,7 @@ public partial class Giay
     public int Magiay { get; set; }
 
     [Column("TENGIAY")]
-    [StringLength(250)]
+    [StringLength(50)]
     public string? Tengiay { get; set; }
 
     [InverseProperty("MagiayNavigation")]

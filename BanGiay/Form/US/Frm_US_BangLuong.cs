@@ -62,7 +62,7 @@ namespace BanGiay.Form.US
                     return;
                 }
                 bangluong.Mataikhoan = maTaiKhoan;
-                bangluong.Thanglam = thangLam;
+                //bangluong.Thanglam = thangLam;
                 bangluong.Luongcoban = luongcoban;
                 bangluong.Tienthuong = tienThuong;
                 bangluong.Tienkhautru = tienKhauTru;
@@ -118,7 +118,7 @@ namespace BanGiay.Form.US
                 }
                 bangluong.Maluong = _idWhenclick;
                 bangluong.Mataikhoan = maTaiKhoan;
-                bangluong.Thanglam = thangLam;
+                //bangluong.Thanglam = thangLam;
                 bangluong.Luongcoban = luongcoban;
                 bangluong.Tienthuong = tienThuong;
                 bangluong.Tienkhautru = tienKhauTru;
